@@ -1,0 +1,16 @@
+@charset "UTF-8"; /* Regra para compatibilidade com assentuação. Começam com @ */
+
+body{
+    background-color: bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: rgb(65, 152, 155);
+}
+h2{
+    color: rgb(227, 172, 99);
+}
+p{
+    text-align: justify;
+}

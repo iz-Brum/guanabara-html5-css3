@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+
+    <style>
+        @font-face {
+            font-family: 'Morris';
+            src: url('morris_roman/MorrisRomanBlack.otf') format('opentype'), url('morris_roman/MorrisRomanBlack.ttf') format('truetype');
+            /*  TIPOS DE format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typografphy)
+                - svg
+            */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+
+        h1{
+            font-family: 'Morris', Times, serif;
+            font-size: 2.5em;
+        }
+
+        /* h2{
+            font-family: 'Source Code Pro', serif;
+            font-size: 1em;
+        } */
+
+        p{
+            text-align: justify
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim laborum numquam dolores quam autem labore quo eaque a reprehenderit vitae, animi cum nobis quidem sit sint natus distinctio architecto perferendis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur exercitationem provident soluta, iusto, totam sunt voluptas debitis voluptate numquam optio dolor minima, assumenda ipsam nisi illo molestias recusandae reiciendis.</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua e/ou aumente o zoom do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgs/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/M.png" type="image/png">
+        <img src="imgs/G.png" alt="Imagem flexivel">    <!-- G -> M -> P
+         -->
+        <!-- 
+        <source media="(max-width: 1300px)" srcset="imgs/G.png" type="image/png">       // formato invertido P -> M -> G
+        <source media="(max-width: 1500px)" srcset="imgs/M.png" type="image/png">
+        <img src="imgs/P.png" alt="Imagem flexivel"> 
+        -->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos reproduzir áudios na HTML5</p>
+
+    <audio src="midia/good-night-audio.mp3" controls autoplay></audio>
+
+    <p>Vamos reproduzir outros tipos de áudio na HTML5</p>
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/good-night-audio.mp3" type="audio/mp3">
+        <source src="midia/good-night-audio.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/good-night-audio.mp3"> Clique aqui para baixar o arquivo MP3</a>.</p>
+    </audio>
+    <!-- MP3 WAV OGG -> formatos de áudio compatíveis -->
+
+</body>
+</html>

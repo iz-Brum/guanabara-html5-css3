@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,100&display=swap');
+        
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em; /* PREFERENCIALMENTE OPTAR POR USAR em, PARA OBTER UMA MAIOR COMPATIBILIDADE EM DIFERENTES TAMANHOS DE TELA (ou px)*/
+            /* Medidas absolutas: cm, mm, in, px, pt, pc
+
+               16px geralmente é = 1em
+
+               Medidas relativas: em, ex, rem, vw, vh, %
+            */ 
+            font-weight: bolder; /* peso da fonte */ /* DEPENDE DA COMPATIBILADADE DA FONTE */ 
+            /* lighter, normal, bold, bolder */
+            font-style: italic;         /* DEPENDE DA COMPATIBILADADE DA FONTE */ 
+            /* text-decoration: ; DEPENDE DA COMPATIBILADADE DA FONTE  */
+        }
+
+       h1{
+        /*  font-family: 'Work Sans';
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        /*  SHORTHAND FONT = 'MÃOZINHA/AJUDA'
+            - (1º) STYLE -> (2º) WEIGHT -> (3º) SIZE -> (4º) FAMILY ->
+        */
+       }
+
+       h2{
+        font: bold 2em 'Work Sans';
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com fontes</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ex illum! Autem nostrum nemo eum unde, nulla animi, impedit eos possimus reprehenderit esse consequatur minus culpa voluptate, labore molestiae? Excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut culpa, est itaque molestiae, laudantium quaerat officia, exercitationem dolorem minus sequi fuga voluptas incidunt error doloribus magnam consequatur eaque odit nostrum!</p>
+        
+        <h2>Subtítulo do ecercício</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit numquam, quasi ratione sint dolores iure voluptatem ipsum iusto aspernatur, quas tenetur maxime ipsa doloribus natus mollitia animi, sit unde?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolorum assumenda repudiandae molestias eius quos commodi incidunt architecto debitis obcaecati delectus consequuntur aliquam, illo quis unde nam nisi molestiae? Consectetur!</p>
+        
+        <h2>Subtítulo do ecercício</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit numquam, quasi ratione sint dolores iure voluptatem ipsum iusto aspernatur, quas tenetur maxime ipsa doloribus natus mollitia animi, sit unde?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repellendus veniam quibusdam sequi vitae necessitatibus maxime natus at quia, iure voluptas exercitationem vero quos facilis beatae voluptatum aut ducimus consequuntur?</p>
+    
+    </main>
+    
+</body>
+</html>
