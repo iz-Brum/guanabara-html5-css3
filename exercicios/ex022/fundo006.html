@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
+
+            /* ShortHand - background 
+            color > image > position > repeat > [size] > attachment
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /* Mesmo constando na documentação oficial, o shorthand para [size] não se aplicam, assim devemos declarar separadamente. Data: 05/09/2023 */
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +34,11 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odit optio! Consectetur, repellat dolorum. Dolore atque illo aliquam, consequuntur voluptatum quas minus consequatur dicta, distinctio autem animi reiciendis repellat sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum officiis doloremque sequi sed itaque rem expedita nam? Consequuntur saepe nihil hic eligendi quod, aperiam quas consequatur tempore illum doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore sint veritatis, quam sit quos quae! Deleniti optio, cumque veritatis ut libero voluptatem voluptatibus cupiditate rerum velit labore dolor. Sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid explicabo quaerat sapiente at quasi sequi recusandae. In dolorum tenetur harum perspiciatis, eligendi odio corporis esse illum! Adipisci, rem blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odit optio! Consectetur, repellat dolorum. Dolore atque illo aliquam, consequuntur voluptatum quas minus consequatur dicta, distinctio autem animi reiciendis repellat sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum officiis doloremque sequi sed itaque rem expedita nam? Consequuntur saepe nihil hic eligendi quod, aperiam quas consequatur tempore illum doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore sint veritatis, quam sit quos quae! Deleniti optio, cumque veritatis ut libero voluptatem voluptatibus cupiditate rerum velit labore dolor. Sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid explicabo quaerat sapiente at quasi sequi recusandae. In dolorum tenetur harum perspiciatis, eligendi odio corporis esse illum! Adipisci, rem blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odit optio! Consectetur, repellat dolorum. Dolore atque illo aliquam, consequuntur voluptatum quas minus consequatur dicta, distinctio autem animi reiciendis repellat sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum officiis doloremque sequi sed itaque rem expedita nam? Consequuntur saepe nihil hic eligendi quod, aperiam quas consequatur tempore illum doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore sint veritatis, quam sit quos quae! Deleniti optio, cumque veritatis ut libero voluptatem voluptatibus cupiditate rerum velit labore dolor. Sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid explicabo quaerat sapiente at quasi sequi recusandae. In dolorum tenetur harum perspiciatis, eligendi odio corporis esse illum! Adipisci, rem blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odit optio! Consectetur, repellat dolorum. Dolore atque illo aliquam, consequuntur voluptatum quas minus consequatur dicta, distinctio autem animi reiciendis repellat sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum officiis doloremque sequi sed itaque rem expedita nam? Consequuntur saepe nihil hic eligendi quod, aperiam quas consequatur tempore illum doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore sint veritatis, quam sit quos quae! Deleniti optio, cumque veritatis ut libero voluptatem voluptatibus cupiditate rerum velit labore dolor. Sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid explicabo quaerat sapiente at quasi sequi recusandae. In dolorum tenetur harum perspiciatis, eligendi odio corporis esse illum! Adipisci, rem blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odit optio! Consectetur, repellat dolorum. Dolore atque illo aliquam, consequuntur voluptatum quas minus consequatur dicta, distinctio autem animi reiciendis repellat sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum officiis doloremque sequi sed itaque rem expedita nam? Consequuntur saepe nihil hic eligendi quod, aperiam quas consequatur tempore illum doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore sint veritatis, quam sit quos quae! Deleniti optio, cumque veritatis ut libero voluptatem voluptatibus cupiditate rerum velit labore dolor. Sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid explicabo quaerat sapiente at quasi sequi recusandae. In dolorum tenetur harum perspiciatis, eligendi odio corporis esse illum! Adipisci, rem blanditiis!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odit optio! Consectetur, repellat dolorum. Dolore atque illo aliquam, consequuntur voluptatum quas minus consequatur dicta, distinctio autem animi reiciendis repellat sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsum officiis doloremque sequi sed itaque rem expedita nam? Consequuntur saepe nihil hic eligendi quod, aperiam quas consequatur tempore illum doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore sint veritatis, quam sit quos quae! Deleniti optio, cumque veritatis ut libero voluptatem voluptatibus cupiditate rerum velit labore dolor. Sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid explicabo quaerat sapiente at quasi sequi recusandae. In dolorum tenetur harum perspiciatis, eligendi odio corporis esse illum! Adipisci, rem blanditiis!</p>
     </main>
 </body>
