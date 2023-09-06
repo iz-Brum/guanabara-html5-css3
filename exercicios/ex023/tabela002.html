@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        caption{
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        td.numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+     <table>
+        <caption>Título da tabela</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>  <!-- São Paulo neste caso é um dado -->
+                <td class="numero">46.651.828</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">1.590.248</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Habitantes</th> 
+            <td class="numero"><strong>51.768.296</strong></td>
+        </tfoot>
+     </table>
+</body>
+</html>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION 
+            THEAD 
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT 
+                TR, TD, TH
+
+    
+    A tag <caption> é usada em tabelas HTML para fornecer um título ou uma legenda descritiva para a tabela. É uma maneira de adicionar contexto ou explicação ao conteúdo da tabela, especialmente quando a tabela é mais complexa ou abrange várias seções. A tag <caption> geralmente é colocada dentro da tag <table>, mas deve aparecer logo após a tag de abertura <table> e antes de qualquer <thead>, <tbody> ou <tfoot>.
+
+    <thead> (Tabela de Cabeçalho): A tag <thead> é usada para agrupar as linhas que contêm os cabeçalhos das colunas em uma tabela. Normalmente, os cabeçalhos das colunas são colocados nas células <th>. O uso do <thead> ajuda a separar visualmente os cabeçalhos da tabela do restante dos dados e é útil quando se deseja aplicar estilos ou formatações específicas aos cabeçalhos da tabela.
+
+    <tbody> (Tabela de Corpo): A tag <tbody> é usada para agrupar as linhas que contêm os dados reais da tabela. As células de dados costumam ser colocadas dentro das células <td>. Separar o corpo da tabela com <tbody> ajuda a distinguir claramente os dados da tabela dos cabeçalhos e do rodapé. Além disso, é útil ao aplicar estilos ou ao manipular dados com scripts.
+
+    <tfoot> (Tabela de Rodapé): A tag <tfoot> é usada para agrupar as linhas que contêm informações de rodapé da tabela, como totais, médias ou outras informações resumidas. É comum usar células <td> dentro de <tfoot> para exibir tais informações no rodapé da tabela.
+
+    As tags HTML tr, td e th são usadas para criar tabelas em uma página da web. Aqui está uma explicação do que cada uma delas faz:
+
+    <tr> (table row): Esta tag é usada para definir uma linha em uma tabela HTML. Dentro de uma <tr>, você pode incluir uma ou mais células de tabela (<td> ou <th>), que são usadas para exibir os dados ou cabeçalhos da tabela.
+
+    <td> (table data): Esta tag é usada para criar uma célula de dados em uma tabela. As células <td> contêm os valores de dados reais que você deseja exibir na tabela. Elas são usadas nas linhas do corpo da tabela (<tbody>).
+
+    <th> (table header): Esta tag é usada para criar uma célula de cabeçalho em uma tabela. As células <th> são usadas para rotular as colunas ou fornecer informações de cabeçalho para as células de dados em uma tabela. Elas geralmente são usadas nas linhas do cabeçalho da tabela (<thead>), mas também podem ser usadas nas linhas do rodapé (<tfoot>).
+
+
+    A propriedade scope é uma propriedade usada em elementos de cabeçalho de tabela (<th>) em HTML para definir o escopo ou o contexto dos cabeçalhos de coluna ou linha em tabelas complexas. Ela fornece informações adicionais sobre como os cabeçalhos devem ser associados às células de dados em tabelas que possuem múltiplos níveis de cabeçalhos.
+
+    A propriedade scope pode ter um dos seguintes valores:
+
+    "row" (linha): Usado para indicar que o cabeçalho se aplica ao escopo da linha em que está localizado. Isso significa que ele se estende horizontalmente e abrange todas as células de dados daquela linha.
+
+    "col" (coluna): Usado para indicar que o cabeçalho se aplica ao escopo da coluna em que está localizado. Isso significa que ele se estende verticalmente e abrange todas as células de dados daquela coluna.
+
+    "rowgroup" (grupo de linhas): Usado para indicar que o cabeçalho se aplica ao escopo de um grupo de linhas adjacentes. Isso é útil em tabelas que possuem grupos de linhas relacionados, como tabelas de dados cruzados.
+
+    "colgroup" (grupo de colunas): Usado para indicar que o cabeçalho se aplica ao escopo de um grupo de colunas adjacentes. Isso é útil em tabelas que possuem grupos de colunas relacionadas.
+     -->
