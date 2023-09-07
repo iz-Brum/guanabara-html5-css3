@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            min-width: 800px;
+            border-collapse: collapse;
+        }
+        
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 04 - Tabelas</h1>
+
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana M S</td>
+                <td>Clube da Luta</td>
+                <td>Gladiador</td>
+                <td>Cisne Negro</td>
+            </tr>
+
+            <tr>
+                <td>Beatriz L S</td>
+                <td>A Vida é Bela</td>
+                <td>Interestelar</td>
+                <td>A Origem</td>
+            </tr>
+
+            <tr>
+                <td>Julia B A</td>
+                <td>Cidade de Deus</td>
+                <td>O Poço</td>
+                <td>Matrix</td>
+            </tr>
+
+            <tr>
+                <th escope="rowgroup" rowspan="3">Homens</th>
+                <td>João P C</td>
+                <td>Parasita</td>
+                <td>A Sociedade dos Poetas Mortos</td>
+                <td>O Pianista</td>
+            </tr>
+
+            <tr>
+                <td>Cesar C B</td>
+                <td>O Poderoso Chefão</td>
+                <td>O Resgate do Soldado Ryan</td>
+                <td>Mad Max: Estrada da Fúria</td>
+            </tr>
+
+            <tr>
+                <td>Vitor S E</td>
+                <td>Pulp Fiction</td>
+                <td>O Senhor dos Anéis: A Sociedade do Anel</td>
+                <td>Vingadores: Ultimat</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
+
+<!-- 
+    A propriedade scope em HTML é usada em tabelas para especificar o escopo de uma célula de cabeçalho (<th>) em relação a outras células na mesma linha ou coluna. Ela ajuda a associar células de cabeçalho com células de dados (<td>) correspondentes.
+
+    row: Indica que a célula de cabeçalho se aplica ao escopo da linha em que está localizada. Ou seja, ela é o cabeçalho de uma ou mais células de dados na mesma linha.
+
+    col: Indica que a célula de cabeçalho se aplica ao escopo da coluna em que está localizada. Ela é o cabeçalho de uma ou mais células de dados na mesma coluna.
+
+    <colgroup>:O elemento <colgroup> é usado para agrupar uma ou mais colunas em uma tabela e aplicar estilos a elas de forma conjunta.
+
+    Ele é especialmente útil quando você deseja aplicar estilos ou propriedades a um conjunto de colunas sem a necessidade de aplicar esses estilos a cada <td> individualmente.
+
+    Pode ser utilizado em conjunto com o elemento <col> dentro dele para definir as propriedades específicas das colunas.
+
+    <rowgroup>:O elemento <thead>, <tbody> e <tfoot> são considerados partes de um elemento mais amplo chamado <table>. No entanto, o HTML5 introduziu o elemento <rowgroup>, que representa um grupo de linhas na tabela para fornecer um contexto semântico.
+
+    Apesar de ser parte da especificação HTML5, o <rowgroup> ainda não é amplamente suportado em todos os navegadores e muitas vezes é subutilizado.
+ -->

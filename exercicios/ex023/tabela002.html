@@ -13,6 +13,8 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.51);
+            position: relative;
         }
 
         td, th{
@@ -25,11 +27,35 @@
             font-weight: bold;
             padding: 5px;
             background-color: lightgoldenrodyellow;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.51);
+
         }
 
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /* Essa expressão CSS está selecionando todas as linhas (<tr>) que são pares dentro do elemento <tbody> de uma tabela HTML. */
+        tbody > tr:nth-child(even){  /* 2n */
+            background-color: lightgray;
+
+        }
+
+        tbody > tr:nth-child(odd){  /* 2n + 1 */
+            background-color: rgba(250, 250, 210, 0.625);
+        }
+
+        td > img{
+            float: left;    
+            padding-right: 10px; 
+            width: 25px;      
         }
 
         td.numero{
@@ -51,15 +77,87 @@
 
         <tbody>
             <tr>
-                <td>São Paulo</td>  <!-- São Paulo neste caso é um dado -->
+                <td>São Paulo <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/33px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira do estado de São Paulo"></td>  <!-- São Paulo neste caso é um dado -->
                 <td class="numero">46.651.828</td>
             </tr>
             <tr>
-                <td>Mato Grosso</td>
+                <td>Mato Grosso <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/30px-Bandeira_de_Mato_Grosso.svg.png" alt="Bandeira do estado de Mato Grosso"></td>
                 <td class="numero">3.526.220</td>
             </tr>
             <tr>
-                <td>Tocantins</td>
+                <td>Tocantins <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/30px-Bandeira_do_Tocantins.svg.png" alt="Bandeira do estado de Tocantins"></td>
+                <td class="numero">1.590.248</td>
+            </tr>
+            <tr>
+                <td>São Paulo <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/33px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira do estado de São Paulo"></td>  <!-- São Paulo neste caso é um dado -->
+                <td class="numero">46.651.828</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/30px-Bandeira_de_Mato_Grosso.svg.png" alt="Bandeira do estado de Mato Grosso"></td>
+                <td class="numero">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Tocantins <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/30px-Bandeira_do_Tocantins.svg.png" alt="Bandeira do estado de Tocantins"></td>
+                <td class="numero">1.590.248</td>
+            </tr>
+            <tr>
+                <td>São Paulo <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/33px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira do estado de São Paulo"></td>  <!-- São Paulo neste caso é um dado -->
+                <td class="numero">46.651.828</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/30px-Bandeira_de_Mato_Grosso.svg.png" alt="Bandeira do estado de Mato Grosso"></td>
+                <td class="numero">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Tocantins <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/30px-Bandeira_do_Tocantins.svg.png" alt="Bandeira do estado de Tocantins"></td>
+                <td class="numero">1.590.248</td>
+            </tr>
+            <tr>
+                <td>São Paulo <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/33px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira do estado de São Paulo"></td>  <!-- São Paulo neste caso é um dado -->
+                <td class="numero">46.651.828</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/30px-Bandeira_de_Mato_Grosso.svg.png" alt="Bandeira do estado de Mato Grosso"></td>
+                <td class="numero">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Tocantins <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/30px-Bandeira_do_Tocantins.svg.png" alt="Bandeira do estado de Tocantins"></td>
+                <td class="numero">1.590.248</td>
+            </tr>
+            <tr>
+                <td>São Paulo <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/33px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira do estado de São Paulo"></td>  <!-- São Paulo neste caso é um dado -->
+                <td class="numero">46.651.828</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/30px-Bandeira_de_Mato_Grosso.svg.png" alt="Bandeira do estado de Mato Grosso"></td>
+                <td class="numero">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Tocantins <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/30px-Bandeira_do_Tocantins.svg.png" alt="Bandeira do estado de Tocantins"></td>
+                <td class="numero">1.590.248</td>
+            </tr>
+            <tr>
+                <td>São Paulo <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/33px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira do estado de São Paulo"></td>  <!-- São Paulo neste caso é um dado -->
+                <td class="numero">46.651.828</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/30px-Bandeira_de_Mato_Grosso.svg.png" alt="Bandeira do estado de Mato Grosso"></td>
+                <td class="numero">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Tocantins <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/30px-Bandeira_do_Tocantins.svg.png" alt="Bandeira do estado de Tocantins"></td>
+                <td class="numero">1.590.248</td>
+            </tr>
+            <tr>
+                <td>São Paulo <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/33px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira do estado de São Paulo"></td>  <!-- São Paulo neste caso é um dado -->
+                <td class="numero">46.651.828</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/30px-Bandeira_de_Mato_Grosso.svg.png" alt="Bandeira do estado de Mato Grosso"></td>
+                <td class="numero">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Tocantins <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/30px-Bandeira_do_Tocantins.svg.png" alt="Bandeira do estado de Tocantins"></td>
                 <td class="numero">1.590.248</td>
             </tr>
         </tbody>
@@ -69,6 +167,16 @@
             <td class="numero"><strong>51.768.296</strong></td>
         </tfoot>
      </table>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, ratione dicta deserunt ipsum reprehenderit, aliquam omnis ab excepturi laboriosam nam cumque voluptate quisquam suscipit alias minima similique natus tempora.</p>
 </body>
 </html>
     <!-- 
