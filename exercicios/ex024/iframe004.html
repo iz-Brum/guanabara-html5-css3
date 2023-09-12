@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 390px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página Principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio soluta reprehenderit eligendi nostrum sunt, a provident, eius ad exercitationem id quae necessitatibus! Impedit, praesentium voluptate. Commodi repudiandae quod perferendis at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, alias provident! Praesentium est, tempora sit harum officiis quia vel reprehenderit? At quam eaque blanditiis aperiam dolore laudantium vel ab unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem dolor voluptates totam rerum odit nulla maxime officia nostrum natus blanditiis, repellat nemo culpa voluptatum ex. Incidunt praesentium velit quam.</p>
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms" referrerpolicy="no-referrer">
+        <p>Parece que este browser não é compatível com o iframe.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque consectetur non veritatis excepturi magnam iste. Atque et, libero exercitationem fugiat deleniti cumque adipisci porro pariatur neque, unde optio. Nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugiat autem nam dicta id, quae ducimus atque? Repellat, itaque. Perferendis qui perspiciatis tempora dolorum accusamus placeat, facilis officiis aliquam odio.</p>
+
+    
+</body>
+</html>
+
+<!-- A propriedade `sandbox` em um elemento `<iframe>` é um atributo que permite restringir o comportamento do conteúdo dentro do iframe. Ela é utilizada para criar um ambiente controlado e seguro para a execução de conteúdo externo, como páginas web ou scripts de terceiros.
+
+Ao definir `sandbox="sandbox"` em um `<iframe>`, algumas ações potencialmente perigosas são desabilitadas por padrão. Por exemplo, o conteúdo dentro do iframe não pode executar scripts, abrir pop-ups, submeter formulários ou realizar operações que envolvem permissões de usuário.
+
+Além disso, o atributo `sandbox` pode receber uma lista de permissões específicas para controlar quais ações são permitidas. Por exemplo, `sandbox="allow-scripts allow-same-origin"` permitiria a execução de scripts, mas apenas a partir do mesmo domínio de origem.
+
+É importante ressaltar que a utilização de `sandbox` é uma medida de segurança e deve ser utilizada com cuidado. É uma boa prática quando se deseja incorporar conteúdo externo, mas se deve ter em mente que certas funcionalidades podem ser limitadas ou desativadas dentro do iframe. -->
+
+
+
+
+<!-- A propriedade `referrerpolicy` em um elemento `<iframe>` é usada para controlar a política de referência para as solicitações feitas a partir do conteúdo carregado dentro do iframe. A política de referência determina que informações sobre a página de origem (a página que carregou o iframe) são incluídas ou não nas solicitações feitas pelo conteúdo dentro do iframe.
+
+Quando você define `referrerpolicy="no-referrer"` em um `<iframe>`, está instruindo o navegador a não incluir informações de referência (como a URL da página de origem) nas solicitações feitas a partir do conteúdo dentro do iframe. Isso significa que o servidor web que recebe as solicitações não terá acesso à URL da página que carregou o iframe.
+
+Isso pode ser útil em cenários em que você deseja proteger a privacidade do usuário ou ocultar informações sensíveis. No entanto, tenha em mente que, ao desativar o envio da informação de referência, algumas funcionalidades que dependem dessa informação podem não funcionar corretamente.
+
+Além de "no-referrer", a propriedade `referrerpolicy` suporta outras opções, como "no-referrer-when-downgrade", "origin", "origin-when-cross-origin", entre outras, cada uma com seu comportamento específico em relação à política de referência. A escolha da política adequada depende dos requisitos de segurança e funcionalidade da sua aplicação web. -->

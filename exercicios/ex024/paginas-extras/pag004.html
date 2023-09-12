@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(42, 236, 191);
+            color: rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Cadatre-se aqui:</h1>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            Nome:
+            <input type="text" name="nome" id="nome">
+            <input type="submit" value="Cadatrar">
+        </p>
+    </form>
+
+    <a href="#" onclick="clicou()">Clique aqui</a>
+        <div id="saida"></div>
+
+
+    <script>
+        function clicou(){
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>Hello, mad Wolrd!</p>'
+        }
+    </script>
+</body>
+</html>
