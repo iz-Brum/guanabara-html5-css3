@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">Usuário:</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="15" placeholder="nome do usário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="25" size="17" placeholder="mínimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- 
+A propriedade autocomplete é um atributo HTML usado em elementos de formulário para indicar se um navegador deve fornecer sugestões automáticas de preenchimento de campos. Essa funcionalidade ajuda os usuários a preencher formulários com mais facilidade e rapidez, especialmente em formulários que exigem informações repetitivas.
+
+O atributo autocomplete pode ser aplicado em um formulário inteiro ou em campos individuais. Aqui estão algumas opções de valores que podem ser utilizados:
+
+on: O navegador pode fornecer sugestões automáticas.
+
+off: O navegador não deve fornecer sugestões automáticas.
+
+name: Se o campo possui um name atribuído, o navegador irá lembrar entradas anteriores para campos com o mesmo nome.
+
+new-password: Sugere ao navegador para preencher automaticamente campos de senha com uma nova senha.
+
+current-password: Sugere ao navegador para preencher automaticamente campos de senha com a senha atual do usuário.
+
+username: Sugere ao navegador para preencher automaticamente campos de nome de usuário.
+
+email: Sugere ao navegador para preencher automaticamente campos de endereço de e-mail.
+
+tel: Sugere ao navegador para preencher automaticamente campos de número de telefone.
+
+É importante notar que o comportamento exato do autocomplete pode variar entre os navegadores e depende de como eles implementam essa funcionalidade.
+ -->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro formulário</h1>
+
+    <form method="post" action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+
+<!-- 
+A tag <label> em HTML é usada para fornecer um rótulo descritivo para um elemento de formulário, como um campo de texto (<input>) ou um botão (<button>). O rótulo ajuda a identificar o propósito do campo ou botão para os usuários. Além disso, quando o rótulo está associado corretamente ao elemento de formulário, clicar no rótulo focará ou ativar o elemento correspondente.
+
+Resumidamente, a tag <label> serve para melhorar a usabilidade e acessibilidade dos formulários na web, tornando mais claro o que é esperado de um determinado campo ou botão.
+ -->
+
+ <!-- 
+GET:
+
+-Dados enviados como parte da URL.
+-Visíveis na barra de endereços.
+-Limite de tamanho para os dados. (limite de 3kb = 3 mil caracteres aproximadamente)
+-Pode ser armazenado em cache e compartilhado.
+-Indicado para dados não sensíveis.
+
+POST:
+
+-Dados enviados no corpo da requisição.
+-Não visíveis na barra de endereços.
+-Sem limite prático de tamanho.
+-Não pode ser armazenado em cache ou compartilhado.
+-Indicado para dados sensíveis ou grandes volumes.
+
+A escolha entre eles depende do tipo de dados e como você deseja que sejam tratados no servidor.
+  -->
