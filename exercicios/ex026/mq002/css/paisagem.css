@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* Dispositivo na orientação paisagem (landscape) */
+
+body{
+    background-color: rgb(208, 129, 26);
+    background-image: url("../imgs/cev-landscape.jpg");
+    background-position: left bottom;
+}
